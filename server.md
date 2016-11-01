@@ -59,7 +59,7 @@ $server->setMessageHandler(function ($message) {
         case 'link':
             # 链接消息...
             break;
-        // ... 其它消息
+        // ... 其它消息塔顶fa
         default:
             # code...
             break;
@@ -68,7 +68,7 @@ $server->setMessageHandler(function ($message) {
     // ...
 });
 ```
-
+ffff
 当然，因为这里 `setMessageHandler` 接收一个 [`callable`](http://php.net/manual/zh/language.types.callable.php) 的参数，所以你不一定要传入一个 Closure 闭包，你可以选择传入一个函数名，一个 `[$class, $method]` 或者 `Foo::bar` 这样的类型。
 
 > :heart: 注意，默认没有验证是否为微信的请求，部署上线建议关掉 debug 模式。
